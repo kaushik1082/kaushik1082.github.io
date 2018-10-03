@@ -94,6 +94,7 @@ function helloWorld() {
     var num1 = Number(document.project2.input2.value);
     //here comes the LOGIC
     return;
+    {
     if (activity == 'Walking') {
         return num1 * 3;
     }
@@ -106,7 +107,7 @@ function helloWorld() {
     else if (activity == 'Video Gaming') {
         return num1 * 3.5;
     }
-
+    }
 
     //PEBCAK
     // Problem exists between chair and keyboard
