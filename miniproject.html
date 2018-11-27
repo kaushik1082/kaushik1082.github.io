@@ -71,5 +71,63 @@
     <button type="button" onclick="document.project4.result.value=xToY()">CONVERTO!</button>
 
 </form>
+      <h4>Madlib Project</h4>
+<script type="text/javascript">
+
+
+    function tellStory()
+    {
+        var words = [];
+        words.push(document.story.adjective1.value);
+        words.push(document.story.adjective2.value);
+        words.push(document.story.maleCelebrity1.value);
+        words.push(document.story.maleCelebrity2.value);
+        words.push(document.story.maleCelebrity3.value);
+        words.push(document.story.noun1.value);
+        words.push(document.story.noun2.value);
+        words.push(document.story.noun3.value);
+        words.push(document.story.noun4.value);
+        words.push(document.story.number.value);
+        words.push(document.story.partOfBody.value);
+        words.push(document.story.pluralAnimal.value);
+        words.push(document.story.pluralNoun.value);
+        words.push(document.story.verbEndingInING.value);
+
+        return "Good afternoon, ladies and gentlemen. This is your favorite sportscaster" +
+            "bringing you the big football game between the Columbia" +
+            "University " + words[11] + "and the West Point " + words[12] +
+            " The center has just snapped the " + words[5] + "back to the Columbia" +
+            "star halfback, " + words[2] + ", who is running around his own left "
+            + words[6] + ". There he's tackled hard around the " + words[10] +". Now" +
+            "it's West Point's ball and " + words[9] + " to go. They're coming out of the " +
+            "huddle. The ball is snapped back to " + words[3] + ", who fades" +
+            "back and throws a long, " + words[0] + " pass which is caught by " +
+            words[4] + ", who is West Point's " + words[1] + " quarterback." +
+            "He's in the clear, and he races over the " + words[5] + " for a touchdown." +
+            "No, no, wait! The referee is calling the play back to the 35-" + words[8] + "" +
+            "line. He's going to penalize West Point for " + words[13] + "."
+    }
+</script>
+</head>
+<body>
+<form name="story">
+    Adjective #1: <input name="adjective1">
+    <br>
+    Adjective #2: <input name="adjective2"><br>
+    Male Celebrity #1: <input name="maleCelebrity1"><br>
+    Male Celebrity #2: <input name="maleCelebrity2"><br>
+    Male Celebrity #3: <input name="maleCelebrity3"><br>
+    Noun #1: <input name="noun1"><br>
+    Noun #2: <input name="noun2"><br>
+    Noun #3: <input name="noun3"><br>
+    Noun #4: <input name="noun4"><br>
+    Number: <input name="number"><br>
+    Part of the Body: <input name="partOfBody"><br>
+    Plural Animal: <input name="pluralAnimal"><br>
+    Plural Noun: <input name="pluralNoun"><br>
+    Verb Ending in ING: <input name="verbEndingInING"><br><br>
+    <button type="button" onclick="document.story.result.value=tellStory()">Story</button><br>
+    <output name="result"></output><br>
+</form>
 </body>
 </html>
